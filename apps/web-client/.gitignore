@@ -5,3 +5,6 @@ playwright-report/
 .env*
 public/native/
 public/resource-sw.js
+AGENTS.md
+agent.md
+CLAUDE.md
