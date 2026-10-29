@@ -287,7 +287,9 @@ test("production plugin resources are versioned and available from cache without
   baseURL,
 }) => {
   test.skip(
-    !baseURL?.includes("4175") && !baseURL?.includes(":5555"),
+    !baseURL?.includes("4175") &&
+      !baseURL?.includes(":5555") &&
+      !baseURL?.includes(":5556"),
     "Service worker runs in production builds",
   );
   await page.goto("/");

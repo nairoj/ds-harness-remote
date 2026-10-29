@@ -5,6 +5,7 @@ export default defineConfig({
   workers: 1,
   use: {
     baseURL: process.env.WEB_TEST_BASE_URL ?? "http://127.0.0.1:4174",
+    ignoreHTTPSErrors: true,
     headless: true,
     channel: "chrome",
     trace: "off",
