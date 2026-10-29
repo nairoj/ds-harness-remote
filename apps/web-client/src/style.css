@@ -1,0 +1,219 @@
+:root {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #242a32;
+  background: #f7f8fa;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #dce1e7;
+  background: #fff;
+  border-radius: 7px;
+  padding: 8px 13px;
+  color: inherit;
+}
+button:hover {
+  border-color: #739fe0;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+.remote-app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.remote-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 22px;
+  border-bottom: 1px solid #e2e5ea;
+  background: #fff;
+  min-height: 58px;
+}
+.remote-header strong {
+  font-size: 17px;
+  white-space: nowrap;
+}
+.remote-header > span {
+  color: #69717e;
+  font-size: 13px;
+}
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.device-main {
+  width: min(720px, 100%);
+  padding: 56px 24px;
+  margin: 0 auto;
+}
+.device-main h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  margin: 0 0 12px;
+}
+.device-main p {
+  color: #69717e;
+  line-height: 1.7;
+}
+.device-list {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+.device {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  text-align: left;
+}
+.device strong {
+  font-size: 16px;
+  display: block;
+}
+.device small {
+  display: block;
+  color: #737e8e;
+  margin-top: 7px;
+}
+.device > span {
+  font-size: 13px;
+  color: #3566a8;
+}
+.refresh {
+  margin-top: 12px;
+}
+.native-frame {
+  border: 0;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  background: #fff;
+}
+.error {
+  background: #fff1f0;
+  color: #a82424;
+  padding: 12px 22px;
+  font-size: 14px;
+}
+.loading {
+  padding: 60px;
+  text-align: center;
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #17243766;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+.trust {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  width: min(440px, 100%);
+  box-shadow: 0 16px 60px #0002;
+}
+.trust h2 {
+  font-size: 21px;
+}
+.trust p {
+  line-height: 1.7;
+  color: #566070;
+}
+.trust code {
+  display: block;
+  padding: 15px;
+  background: #f3f5f8;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.trust footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+.primary {
+  background: #1677ff;
+  color: white;
+  border-color: #1677ff;
+}
+@media (max-width: 600px) {
+  .remote-header {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .remote-header > span {
+    display: none;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .header-actions > span {
+    display: none;
+  }
+  .device-main {
+    padding: 32px 18px;
+  }
+  .device-main h1 {
+    font-size: 24px;
+  }
+  .device {
+    padding: 18px;
+  }
+  .remote-header strong {
+    font-size: 15px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #14161b;
+    color: #e7e9ee;
+  }
+  .remote-header,
+  .device,
+  .trust,
+  button {
+    background: #1e222a;
+    color: #e7e9ee;
+    border-color: #373f4d;
+  }
+  .device-main p,
+  .trust p {
+    color: #a9b2c2;
+  }
+  .trust code {
+    background: #15191f;
+  }
+  .remote-header {
+    border-color: #303743;
+  }
+  .native-frame {
+    background: #14161b;
+  }
+}
+.directory-loading {
+  padding: 8px 18px;
+  background: #edf4ff;
+  color: #355a8b;
+  font-size: 13px;
+  border-bottom: 1px solid #dce8f7;
+}

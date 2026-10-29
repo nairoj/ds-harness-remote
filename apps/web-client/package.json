@@ -1,0 +1,35 @@
+{
+  "name": "dsh-remote-web-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/prepare-native.mjs && vite build",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "check": "tsc --noEmit",
+    "prepare:native": "node scripts/prepare-native.mjs"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@lukeburns/clatterjs": "1.0.0",
+    "@noble/ciphers": "^1.1.3",
+    "@noble/curves": "^1.7.0",
+    "@noble/hashes": "^1.6.1",
+    "antd": "^5.29.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.3"
+  }
+}

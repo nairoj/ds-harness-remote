@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/liguobao/ds-harness-remote",
+  "tag": "v0.5.19",
+  "commit": "349441dfcea79925e801f0004c1eeec2dd572800",
+  "packages": [
+    "protocol",
+    "crypto",
+    "webrtc",
+    "client-core"
+  ]
+}

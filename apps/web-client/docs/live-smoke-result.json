@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-26T13:27:59.137Z",
+  "results": [
+    {
+      "host": "HIH-D-23754",
+      "harnessVersion": "0.2.0-rc.2",
+      "pluginVersion": "0.5.14",
+      "encrypted": true,
+      "workspaceBaselineType": "baseline",
+      "sessionCount": 615,
+      "passed": true
+    }
+  ]
+}

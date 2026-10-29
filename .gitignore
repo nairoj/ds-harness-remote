@@ -5,6 +5,7 @@ dist/
 packages/plugin/dist/*
 !packages/plugin/dist/index.js
 !packages/plugin/dist/client.github.js
+!apps/web-client/dist/
 .turbo/
 .local/
 .vite/
